@@ -1,15 +1,24 @@
-#- name: Variables
-#  hosts: localhost
-#  connection: local
-#  vars:
-#      URL: play.google.com
-#  tasks:
-#    - name: Print a variable
-#      vars:
-#        URL: task.google.com
-#      ansible.builtin.debug:
-#        msg: Var URL - {{ URL }}
-#    - name: Print a variable
-#      ansible.builtin.debug:
-#        msg: Var URL - {{ URL }}
-#
+- name: Variables
+  hosts: localhost
+  connection: local
+  vars:
+      URL: play.google.com
+  tasks:
+    - name: Print a variable
+      vars:
+        URL: task.google.com
+      ansible.builtin.debug:
+        msg: Var URL - {{ URL }}
+    - name: Print a variable
+      ansible.builtin.debug:
+        #msg: Var URL - {{ URL }}
+      msg: "{{ URL }}"
+
+
+
+
+## KEY: VAL - lINE 11
+#KEY: {{ VAR }}, then ansible excepts it to be in double quotes. - line 15
+
+
+
