@@ -19,7 +19,7 @@
 
 
 ## KEY: VAL - lINE 11
-#KEY: {{ VAR }}, then ansible excepts it to be in double quotes. - line 15
+#KEY: {{ VAR }}, then ansible excepts it to be in double quotes. - line 16
 
 
 
